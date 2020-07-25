@@ -1,0 +1,50 @@
+body{
+    margin-top: 20px;
+    font-family: Verdana, Helvetica, SansSerif;
+    font-size: 0.7em;
+
+}
+#container{
+  display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+#links ul{
+
+    list-style-type: none;
+
+}
+li, li{
+    display: inline;
+    border-right: 1px solid black;
+    padding: 2px;
+}
+li:last-child{
+    border-right: 0px;
+
+}
+ a{
+    color: blue;
+    cursor: pointer;
+     text-decoration: underline dotted;
+}
+#links{
+    text-decoration: dotted;
+}
+#buttons{
+
+
+}
+
+#btc_links a{
+    color: blue;
+}
+#pirate_search{
+    width: 200px;
+    margin-left: 50%;
+    padding: 2px;
+    transform: translate(-50%,0%);
+
+}
