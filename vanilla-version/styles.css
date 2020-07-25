@@ -48,3 +48,13 @@ li:last-child{
     transform: translate(-50%,0%);
 
 }
+#checkboxes>input{
+
+
+}
+
+#checkboxes>label{
+
+   margin-left: -4px;
+
+}
