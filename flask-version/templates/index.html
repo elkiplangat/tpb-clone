@@ -1,3 +1,4 @@
+{% import "bootstrap/wtf.html" as wtf %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,7 @@
     <title>Download music, movies, games, software!</title>
 </head>
 <body>
+{% block page_content %}
 <div id="container">
     <a href="index.html"><img src="../static/tpb.jpg" alt="tpb"/></a>
     <span id="links" class="decorated__links">
@@ -19,7 +21,8 @@
         </ul>
 
     </span>
-    <input placeholder="Pirate Search" id="pirate_search"><br/>
+    {{ wtf.quick_form(form) }}
+   {# <input placeholder="Pirate Search" id="pirate_search"><br/>#}
     <span id="checkboxes">
         <input type="checkbox" name="All" id="All" value="All" checked="checked"/>
         <label for="All">All</label>
@@ -67,6 +70,6 @@
 
 
 </div>
-
+{% endblock %}
 </body>
 </html>
